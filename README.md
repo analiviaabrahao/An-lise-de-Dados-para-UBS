@@ -14,7 +14,7 @@ Além de mostrar gráficos com informações úteis para a tomada de decisão do
 
 ##
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 Next.js (API Routes e frontend)
 Shadcn ui (frontend)
@@ -27,7 +27,7 @@ SQL (para cálculo e consulta da posição na fila)
 
 ## Como funciona o cálculo da fila ⚙️
 A posição é calculada usando window function do PostgreSQL:
-
+```
 SELECT 
   f.id,
   p.nome,
@@ -47,13 +47,12 @@ ORDER BY → define a ordem pela data de entrada
 
 ROW_NUMBER() → gera a posição do paciente na fila
 
-
+```
 ## Para Calcular e Atualizar a posição no banco ⚙️
 
 Uso o ROW_NUMBER() do SQL para calcular a posição dentro de cada grupo (prioridade + tipo_exame) e fazer o UPDATE:
 
-```bash
-pip install flask
+```
 
   await pool.query(`
   WITH fila_ordenada AS (
@@ -73,3 +72,8 @@ pip install flask
 `);
   f.data_entrada ASC, -- Ordem de chegada
   e.tipo_exame ASC;   -- Tipo de exame
+```
+
+
+
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://drive.google.com/file/d/1HD3t3iANnoj06HQuEKx1p8xWvuIZhCv8/view?usp=sharing)
