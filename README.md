@@ -52,7 +52,10 @@ ROW_NUMBER() → gera a posição do paciente na fila
 
 Uso o ROW_NUMBER() do SQL para calcular a posição dentro de cada grupo (prioridade + tipo_exame) e fazer o UPDATE:
 
-await pool.query(`
+```bash
+pip install flask
+
+  await pool.query(`
   WITH fila_ordenada AS (
     SELECT
       f.id,
@@ -68,31 +71,5 @@ await pool.query(`
   FROM fila_ordenada fo
   WHERE f.id = fo.id;
 `);
-<div>
-
-        <img src="https://drive.google.com/file/d/1HD3t3iANnoj06HQuEKx1p8xWvuIZhCv8/view?usp=sharing" alt="Texto Alternativo" width="100">
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   f.data_entrada ASC, -- Ordem de chegada
   e.tipo_exame ASC;   -- Tipo de exame
