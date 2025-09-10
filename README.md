@@ -74,5 +74,6 @@ Uso o ROW_NUMBER() do SQL para calcular a posição dentro de cada grupo (priori
   e.tipo_exame ASC;   -- Tipo de exame
 ```
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://drive.google.com/file/d/1HD3t3iANnoj06HQuEKx1p8xWvuIZhCv8/view)
-![Logo do projeto](https://raw.githubusercontent.com/usuario/repositorio/main/assets/logo.png)
+![Logo do projeto](https://github.com/analiviaabrahao/projeto-analisededados-gestoresUBS/blob/README.md/Dashboard-UBS.png)
+![Logo do projeto](https://github.com/analiviaabrahao/projeto-analisededados-gestoresUBS/blob/README.md/fila-pacientes.png)
+
